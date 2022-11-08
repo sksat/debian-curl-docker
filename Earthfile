@@ -10,4 +10,4 @@ FROM ${BASE_IMG}:${BASE_TAG}
 docker:
   RUN apt-get update && apt-get install --no-install-recommends -y curl
   ARG DOCKER_META_VERSION
-  SAVE IMAGE ghcr.io/sksat/debian-curl-docker:${BASE_TAG}-${DOCKER_META_VERSION}
+  SAVE IMAGE --push ghcr.io/sksat/debian-curl-docker:${BASE_TAG}-${DOCKER_META_VERSION}
