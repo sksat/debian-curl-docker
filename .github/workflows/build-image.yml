@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        base_tag: [buster, slim-buster, slim, bullseye, slim-bullseye]
+        base_tag: [bookworm, bookworm-slim, bullseye, bullseye-slim, buster, buster-slim, experimental, stable, stable-slim, testing, testing-slim, unstable, unstable-slim]
 
     steps:
     - uses: actions/checkout@v3
