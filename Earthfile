@@ -8,6 +8,6 @@ ARG BASE_TAG=bullseye-slim # default tag
 FROM ${BASE_IMG}:${BASE_TAG}
 
 docker:
-  RUN apt-get update && apt-get install --no-install-recommends -y curl
+  RUN apt-get update && apt-get install -y curl
   ARG DOCKER_META_VERSION
   SAVE IMAGE --push ghcr.io/sksat/debian-curl-docker:${BASE_TAG}-${DOCKER_META_VERSION}
