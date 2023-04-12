@@ -30,7 +30,7 @@ jobs:
           type=ref,event=pr
           type=raw,value=${{ needs.rust_version.outputs.rust_version }},enable={{is_default_branch}}
 
-    - uses: earthly/actions-setup@v1.0.5
+    - uses: earthly/actions-setup@v1.0.7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
