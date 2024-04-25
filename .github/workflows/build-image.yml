@@ -16,7 +16,7 @@ jobs:
         base_tag: [bookworm, bookworm-slim, bullseye, bullseye-slim, buster, buster-slim, experimental, stable, stable-slim, testing, testing-slim, unstable, unstable-slim]
 
     steps:
-    - uses: actions/checkout@v4.1.1
+    - uses: actions/checkout@v4.1.4
 
     - uses: docker/metadata-action@v5.5.1
       id: meta
