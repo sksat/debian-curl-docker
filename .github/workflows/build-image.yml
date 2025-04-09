@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4.2.2
 
-    - uses: docker/metadata-action@v5.5.1
+    - uses: docker/metadata-action@v5.7.0
       id: meta
       with:
         images: |
